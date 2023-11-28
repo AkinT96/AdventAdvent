@@ -38,8 +38,8 @@ const tuer = document.querySelectorAll(".flex-box")
 
 
 
-//hab doch umgebaut, aber jetzt sind die if Konditionen
-// für die Zeit nicht mehr drin, würde ich auch mit nem Array und der Schleife lösen
+//hab doch umgebaut, aber jetzt sind die if Konditionen(checken der Zeit)
+//  nicht mehr drin, würde ich auch mit nem Array und der Schleife lösen
 
 
 const innerHTMLArray = [
