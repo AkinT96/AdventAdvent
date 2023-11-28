@@ -85,3 +85,8 @@ html {
     width: 100%;
 }
 
+.fuerAlle {
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
