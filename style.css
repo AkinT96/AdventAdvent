@@ -1,0 +1,87 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    font-family: 'Great Vibes', cursive;
+    color: #1f1676;
+}
+
+.flex-box {
+    flex: 0.1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: black solid 1px;
+    background: #0c761a;
+    transition: background-color 0.5s, transform 0.5s;
+    cursor: pointer;
+}
+
+.flex-box-aussen-links {
+    flex: 0.1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: black solid 1px;
+    background: #0c761a;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius : 15px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+.flex-box-aussen-rechts {
+    flex: 0.1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: black solid 1px;
+    background: #0c761a;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius : 15px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
+.flex-box-beidseitig {
+    flex: 0.1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: black solid 1px;
+    background: #0c761a;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
+.flex-box-stiel {
+    cursor: pointer;
+    flex: 0.1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: black solid 1px;
+    background: #762c0a;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
+.bilder {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+html {
+    background-image: url("img/xmas.jpg");
+    background-repeat: no-repeat;
+    eihght: 100%;
+    width: 100%;
+}
+

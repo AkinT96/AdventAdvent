@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script type="module">
+        function updateAktuellesDatum() {
+            return new Date();
+        }
+
+        const zielDatumTuer1 = new Date(2023, 10, 1);
+        const zielDatumTuer2 = new Date(2023, 10, 2);
+        const zielDatumTuer3 = new Date(2023, 10, 3);
+        const zielDatumTuer4 = new Date(2023, 10, 4);
+        const zielDatumTuer5 = new Date(2023, 10, 5);
+        const zielDatumTuer6 = new Date(2023, 10, 6);
+        const zielDatumTuer7 = new Date(2023, 10, 7);
+        const zielDatumTuer8 = new Date(2023, 10, 8);
+        const zielDatumTuer9 = new Date(2023, 10, 9);
+        const zielDatumTuer10 = new Date(2023, 10, 10);
+        const zielDatumTuer11 = new Date(2023, 10, 11);
+        const zielDatumTuer12 = new Date(2023, 10, 12);
+        const zielDatumTuer13 = new Date(2023, 10, 13);
+        const zielDatumTuer14 = new Date(2023, 10, 14);
+        const zielDatumTuer15 = new Date(2023, 10, 15);
+        const zielDatumTuer16 = new Date(2023, 10, 16);
+        const zielDatumTuer17 = new Date(2023, 10, 17);
+        const zielDatumTuer18 = new Date(2023, 10, 18);
+        const zielDatumTuer19 = new Date(2023, 10, 19);
+        const zielDatumTuer20 = new Date(2023, 10, 20);
+        const zielDatumTuer21 = new Date(2023, 10, 21);
+        const zielDatumTuer22 = new Date(2023, 10, 22);
+        const zielDatumTuer23 = new Date(2023, 10, 23);
+        const zielDatumTuer24 = new Date(2023, 10, 24);
+        const aktuellesDatum = updateAktuellesDatum();
+        const tuer = document.querySelectorAll(".flex-box")
+
+
+        //hatte keine Zeit mehr für den Umbau, aber hätte ich die würde ich noch wie folgt umbauen:
+        //einen großen Array mit allen events erstellen und in einer fori schleife die türen abgehen
+        // und gleichzeitig auch den Eventarray abgehen, dann hat man weniger codezeilen
+        //hätte auch eine generelle flex-box klasse gemacht, welche jede Tür zusätzlich bekommt, damit ich nicht verschiedene schleifen hab
+        //die Animation sieht uncool aus, wenn man viele Türen öffnet, aber man öffnet ja normalerweise jeden Tag 1, da fand ich die angebracht
+
+
+
+
+        //mittlere nicht abgerundete Blöcke
+        if (aktuellesDatum >= zielDatumTuer16) {
+            tuer[0].addEventListener("click", function () {
+                tuer[0].innerHTML = "<a href=\"https://www.backenmachtgluecklich.de/rezepte/einfache-kekse-aus-3-zutaten.html\"><img alt='weihnachtsgebäck' class='bilder' src=\"https://www.stilartmoebel.de/zuhause-bei-sam/wp-content/uploads/2014/12/weihnachten-feiern-europa-traditionen-1024x682.jpg\"></a>\n"
+
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer19) {
+            tuer[1].addEventListener("click", function () {
+                tuer[1].innerHTML = "<iframe class='bilder' width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/E8gmARGvPlI?si=rKCzr_r9WmFIxRds\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer18) {
+            tuer[2].addEventListener("click", function () {
+                tuer[2].innerHTML = "💵"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer2) {
+            tuer[3].addEventListener("click", function () {
+                tuer[3].innerHTML = "🎊"
+            })
+        }
+        if (aktuellesDatum >= zielDatumTuer7) {
+            tuer[4].addEventListener("click", function () {
+                tuer[4].innerHTML = "😍"
+            })
+        }
+        if (aktuellesDatum >= zielDatumTuer14) {
+            tuer[5].addEventListener("click", function () {
+                tuer[5].innerHTML = "Was geht bro"
+            })
+        }
+        if (aktuellesDatum >= zielDatumTuer17) {
+            tuer[6].addEventListener("click", function () {
+                tuer[6].innerHTML = "<a href=\"https://www.spielaffe.de/Spiel/Build-A-Snowman\">Klick nochmal</a>\n"
+            })
+        }
+        if (aktuellesDatum >= zielDatumTuer9) {
+            tuer[7].addEventListener("click", function () {
+                tuer[7].innerHTML = "<iframe class='bilder' width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/B-HVW3Vl87A?si=Fc_6-D9kqhiJQlMZ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer8) {
+            tuer[8].addEventListener("click", function () {
+                tuer[8].innerHTML = "Was geht bro"
+            })
+        }
+
+        //baumspitze
+        const spitze = document.querySelector(".flex-box-beidseitig")
+        if (aktuellesDatum >= zielDatumTuer10) {
+            spitze.addEventListener("click", function () {
+                spitze.innerHTML = "🍩"
+            })
+        }
+
+
+        //Blöcke rechts
+        const eckenRechts = document.querySelectorAll(".flex-box-aussen-rechts")
+
+
+        if (aktuellesDatum >= zielDatumTuer24) {
+            eckenRechts[0].addEventListener("click", function () {
+                eckenRechts[0].innerHTML = "💘"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer23) {
+            eckenRechts[1].addEventListener("click", function () {
+                eckenRechts[1].innerHTML = "❤️"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer1) {
+            eckenRechts[2].addEventListener("click", function () {
+            eckenRechts[2].innerHTML = "<iframe class='bilder' width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QQu1_bf1Bdo?si=oITaDavQT5RUm6Wx\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer15) {
+            eckenRechts[3].addEventListener("click", function () {
+            eckenRechts[3].innerHTML = "<iframe class='bilder' width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/r6tH55syq0o?si=1Z7ibiyYpZ5QKVb6\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer20) {
+            eckenRechts[4].addEventListener("click", function () {
+                eckenRechts[4].innerHTML = "<a href=\"https://www.visit-hannover.com/Sehensw%C3%BCrdigkeiten-Stadttouren/Sehensw%C3%BCrdigkeiten\"><img class=\"bilder\" src=\"https://www.ab-in-den-urlaub.de/magazin/wp-content/uploads/2021/10/1633601818_Hannover-von-oben.jpg\"></a>\n"
+            })
+        }
+
+
+        //blöcke links
+        const eckenLinks = document.querySelectorAll(".flex-box-aussen-links")
+
+
+        if (aktuellesDatum >= zielDatumTuer12) {
+            eckenLinks[0].addEventListener("click", function () {
+                eckenLinks[0].innerHTML = "Was geht bro"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer4) {
+            eckenLinks[1].addEventListener("click", function () {
+                eckenLinks[1].innerHTML = "💞"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer13) {
+            eckenLinks[2].addEventListener("click", function () {
+            eckenLinks[2].innerHTML = "<iframe class='bilder' width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OoQLoKHhohg?si=37cCCOBaFkHSG6kP\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer11) {
+            eckenLinks[3].addEventListener("click", function () {
+                eckenLinks[3].innerHTML = "<a href=\"https://www.einfachbacken.de/rezepte/zimtschnecken-einfach-selbstgemacht\">Backgutschein</a>\n"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer5) {
+            eckenLinks[4].addEventListener("click", function () {
+                eckenLinks[4].innerHTML = "🐞"
+            })
+        }
+
+        //Stiel-Blöcke
+        const stiel = document.querySelectorAll(".flex-box-stiel")
+
+        if (aktuellesDatum >= zielDatumTuer21) {
+            stiel[0].addEventListener("click", function () {
+                stiel[0].innerHTML = "🍟"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer22) {
+            stiel[1].addEventListener("click", function () {
+                stiel[1].innerHTML = "<iframe class='bilder' width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iTwaxbQCLQo?si=n_oYFnykYkMjU2JJ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer6) {
+            stiel[2].addEventListener("click", function () {
+                stiel[2].innerHTML = "🌯"
+            })
+        }
+
+        if (aktuellesDatum >= zielDatumTuer3) {
+            stiel[3].addEventListener("click", function () {
+                stiel[3].innerHTML = "🍫"
+            })
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const tuer = document.querySelectorAll(".flex-box");
+
+            function handleClick(index) {
+                tuer[index].style.transform = "scale(1.2)";
+
+            }
+
+            tuer.forEach(function (box, index) {
+                box.addEventListener("click", function () {
+                    handleClick(index);
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const tuer = document.querySelectorAll(".flex-box-stiel");
+
+            function handleClick(index) {
+                tuer[index].style.transform = "scale(1.2)";
+
+            }
+
+            tuer.forEach(function (box, index) {
+                box.addEventListener("click", function () {
+                    handleClick(index);
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const tuer = document.querySelectorAll(".flex-box-beidseitig");
+
+            function handleClick(index) {
+                tuer[index].style.transform = "scale(1.2)";
+
+            }
+
+            tuer.forEach(function (box, index) {
+                box.addEventListener("click", function () {
+                    handleClick(index);
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const tuer = document.querySelectorAll(".flex-box-aussen-links");
+
+            function handleClick(index) {
+                tuer[index].style.transform = "scale(1.2)";
+
+            }
+
+            tuer.forEach(function (box, index) {
+                box.addEventListener("click", function () {
+                    handleClick(index);
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const tuer = document.querySelectorAll(".flex-box-aussen-rechts");
+
+            function handleClick(index) {
+                tuer[index].style.transform = "scale(1.2)";
+
+            }
+
+            tuer.forEach(function (box, index) {
+                box.addEventListener("click", function () {
+                    handleClick(index);
+                });
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+<audio controls>
+    <source src="img/xmasmusik.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div class="flex-container">
+    <div class="flex-box-beidseitig">10</div>
+</div>
+<div class="flex-container">
+    <div class="flex-box-aussen-links">12</div>
+    <div class="flex-box-aussen-rechts">24</div>
+</div>
+<div class="flex-container">
+    <div class="flex-box-aussen-links">4</div>
+    <div class="flex-box">16</div>
+    <div class="flex-box-aussen-rechts">23</div>
+</div>
+<div class="flex-container">
+    <div class="flex-box-aussen-links">13</div>
+    <div class="flex-box">19</div>
+    <div class="flex-box">18</div>
+    <div class="flex-box-aussen-rechts">1</div>
+</div>
+<div class="flex-container">
+    <div class="flex-box-aussen-links">11</div>
+    <div class="flex-box">2</div>
+    <div class="flex-box">7</div>
+    <div class="flex-box">14</div>
+    <div class="flex-box-aussen-rechts">15</div>
+</div>
+<div class="flex-container">
+    <div class="flex-box-aussen-links">5</div>
+    <div class="flex-box">17</div>
+    <div class="flex-box">9</div>
+    <div class="flex-box">8</div>
+    <div class="flex-box-aussen-rechts">20</div>
+</div>
+<div class="flex-container">
+    <div class="flex-box-stiel">21</div>
+</div>
+
+<div class="flex-container">
+    <div class="flex-box-stiel">22</div>
+</div>
+
+<div class="flex-container">
+    <div class="flex-box-stiel">6</div>
+</div>
+
+<div class="flex-container">
+    <div class="flex-box-stiel">3</div>
+</div>
+
+</body>
+</html>
